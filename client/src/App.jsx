@@ -19,7 +19,7 @@ function App() {
 
     try {
       const jsonInput = JSON.parse(input);
-      const res = await axios.post('http://localhost:8081/bfhl', jsonInput);
+      const res = await axios.post('https://bajajqualification.onrender.com/bfhl', jsonInput);
       setResponse(res.data);
     } catch (err) {
       setError('Invalid JSON input');
